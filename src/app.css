@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: minmax(450px, 700px) minmax(750px, 700px)
+
+}
+
+.img-hero{
+    width: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    max-width: 600px;
+}
+
+.hero__description{
+    align-self: center;
+}
+
+.hero__description h1{
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.hero__description p{
+    font-size: 1rem;
+    padding: 20px 0px;
+    line-height: 1.5rem;
+}
+
+.hero__description button{
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background: orange;
+    color: #fff;
+    
+}
