@@ -1,3 +1,3 @@
 # Best-food
 
-![Recordit GIF](https://recordit.co/vp7VRCOKuK.gif)
+![Recordit GIF](http://g.recordit.co/iLijBDrNGB.gif)
