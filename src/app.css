@@ -8,11 +8,12 @@
 main {
   max-width: 1200px;
   margin: 0 auto;
+  min-width: 710px;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(450px, 700px) minmax(750px, 700px);
+  grid-template-columns: minmax(300px, 2fr) 3fr;
   padding: 30px 0px;
   grid-auto-rows: 550px;
   border-bottom: 1px solid rgb(145, 144, 144);
@@ -32,12 +33,14 @@ main {
 .hero__description h1 {
   font-weight: 900;
   font-size: 4rem;
+  color: darkgray;
 }
 
 .hero__description p {
   font-size: 1rem;
   padding: 20px 0px;
   line-height: 1.5rem;
+  color: darkgray;
 }
 
 .hero__description button {
@@ -50,10 +53,10 @@ main {
 }
 .dishes--options .dishes-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
   grid-auto-rows: 1fr;
   gap: 20px;
-  padding: 40px 0px;
+  padding: 15px 0px;
   justify-content: center;
 }
 
@@ -72,20 +75,49 @@ main {
 .dishes-title {
   text-align: center;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  color: darkgray;
 }
 
 .dishes--options {
   padding: 40px 0px;
 }
 
-.dishes-menu {
+.dishes-container-menu .dishes-menu {
   display: grid;
-  grid-template-columns: repeat(5, minmax(180px, 180px));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 0px));
   justify-content: center;
+  gap: 20px;
 }
 
 .dishes-menu img {
   width: 100%;
   object-fit: contain;
+  background: antiquewhite;
+  border-radius: 5px;
+  height: 173px;
+}
+
+
+.dishes-container-menu h2{
+text-align: center;
+padding: 20px 0px;
+color: darkgray;
+font-size: 2.5rem;
+}
+
+.dishes-container-menu{
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px){
+
+    .hero{
+        grid-template-columns: minmax(300px, 500px);
+        justify-content: center;
+    }
+    .img-hero{
+display: none;
+    }
+    
 }
