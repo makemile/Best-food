@@ -1,49 +1,91 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-main{
-    max-width: 1200px;
-    margin: 0 auto;
+main {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.hero{
-    display: grid;
-    grid-template-columns: minmax(450px, 700px) minmax(750px, 700px)
-
+.hero {
+  display: grid;
+  grid-template-columns: minmax(450px, 700px) minmax(750px, 700px);
+  padding: 30px 0px;
+  grid-auto-rows: 550px;
+  border-bottom: 1px solid rgb(145, 144, 144);
 }
 
-.img-hero{
-    width: 100%;
-    object-fit: contain;
-    background-repeat: no-repeat;
-    max-width: 600px;
+.img-hero {
+  width: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  max-width: 600px;
 }
 
-.hero__description{
-    align-self: center;
+.hero__description {
+  align-self: center;
 }
 
-.hero__description h1{
-    font-weight: 900;
-    font-size: 4rem;
+.hero__description h1 {
+  font-weight: 900;
+  font-size: 4rem;
 }
 
-.hero__description p{
-    font-size: 1rem;
-    padding: 20px 0px;
-    line-height: 1.5rem;
+.hero__description p {
+  font-size: 1rem;
+  padding: 20px 0px;
+  line-height: 1.5rem;
 }
 
-.hero__description button{
-    width: 150px;
-    height: 40px;
-    border-radius: 40px;
-    border: none;
-    background: orange;
-    color: #fff;
-    
+.hero__description button {
+  width: 150px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  background: orange;
+  color: #fff;
+}
+.dishes--options .dishes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 250px));
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  padding: 40px 0px;
+  justify-content: center;
+}
+
+.dishe {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.dishe__big {
+  grid-area: 1/1/3/3;
+}
+
+.dishes-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.dishes--options {
+  padding: 40px 0px;
+}
+
+.dishes-menu {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(180px, 180px));
+  justify-content: center;
+}
+
+.dishes-menu img {
+  width: 100%;
+  object-fit: contain;
 }
