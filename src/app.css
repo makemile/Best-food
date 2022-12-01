@@ -6,7 +6,7 @@
 }
 
 main {
-  max-width: 1066px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -52,7 +52,7 @@ main {
 }
 .dishes--options {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   grid-auto-rows: 170px;
   gap: 20px;
   padding: 15px 0px;
