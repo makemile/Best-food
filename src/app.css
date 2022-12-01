@@ -13,7 +13,7 @@ main {
 .hero {
   display: grid;
   grid-template-columns: minmax(300px, 2fr) 3fr;
-  padding: 30px 0px;
+  padding: 30px 15px;
   grid-auto-rows: 550px;
   border-bottom: 1px solid rgb(145, 144, 144);
 }
@@ -77,10 +77,11 @@ main {
   font-weight: 600;
   font-size: 2.5rem;
   color: darkgray;
+  padding: 20px 0px;
 }
 
 .dishes--options {
-  padding: 40px 0px;
+  padding: 10px 15px;
 }
 
 .dishes-container-menu {
@@ -99,19 +100,29 @@ main {
   height: 173px;
 }
 
-.dishes-container-menu h2 {
-  text-align: center;
-  padding: 20px 0px;
-  color: darkgray;
-  font-size: 2.5rem;
+
+.dishes-container-menu h2{
+text-align: center;
+padding: 20px 0px;
+color: darkgray;
+font-size: 2.5rem;
 }
 
-.dishes-container-menu {
-  padding: 20px;
+.dishes-container-menu{
+    padding: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .img-hero {
-    display: none;
-  }
+@media screen and (max-width: 425px){
+
+    .dishe__big{
+       grid-area: 1/1/1/1;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .img-hero{
+display: none;
+    }
+    
 }
